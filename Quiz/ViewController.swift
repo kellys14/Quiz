@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Quiz
 //
-//  Created by Sean Melnick Kelly on 1/17/17.
+//  Created by Sean Melnick N. Kelly on 1/17/17.
 //  Copyright © 2017 Sean Melnick Kelly. All rights reserved.
 //
 
