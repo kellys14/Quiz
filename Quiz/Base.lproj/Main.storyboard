@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,22 +47,33 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj5-jX-tve"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyJ-vU-jcZ">
+                                <rect key="frame" x="166.5" y="97" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Hq2-zM-viD" firstAttribute="top" secondItem="iPU-6h-Lxn" secondAttribute="bottom" id="0tb-Le-TnY"/>
                             <constraint firstItem="OoI-IX-NfT" firstAttribute="top" secondItem="Hq2-zM-viD" secondAttribute="bottom" constant="175" id="6yN-HB-dqX"/>
-                            <constraint firstItem="iPU-6h-Lxn" firstAttribute="centerX" secondItem="Hq2-zM-viD" secondAttribute="centerX" id="98L-QU-6iR"/>
                             <constraint firstItem="TO9-jf-0W9" firstAttribute="centerX" secondItem="Hq2-zM-viD" secondAttribute="centerX" id="I5c-i3-wnG"/>
+                            <constraint firstItem="QyJ-vU-jcZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lap-Pt-Dc3"/>
+                            <constraint firstItem="QyJ-vU-jcZ" firstAttribute="top" secondItem="iPU-6h-Lxn" secondAttribute="top" id="b8z-cx-RFO"/>
                             <constraint firstItem="iPU-6h-Lxn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKm-fx-wn8"/>
                             <constraint firstItem="TO9-jf-0W9" firstAttribute="top" secondItem="Hq2-zM-viD" secondAttribute="bottom" constant="195" id="eQu-de-P6S"/>
                             <constraint firstItem="iPU-6h-Lxn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="om5-k8-sjy"/>
                             <constraint firstItem="OoI-IX-NfT" firstAttribute="centerX" secondItem="Hq2-zM-viD" secondAttribute="centerX" id="twN-xG-VTU"/>
+                            <constraint firstItem="Hq2-zM-viD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRn-uo-AuM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="OoI-IX-NfT" id="ziY-YD-4rn"/>
-                        <outlet property="questionLabel" destination="iPU-6h-Lxn" id="fNx-Ss-843"/>
+                        <outlet property="currentQuestionLabel" destination="iPU-6h-Lxn" id="xcn-nw-wb9"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="cKm-fx-wn8" id="q8m-EO-w9z"/>
+                        <outlet property="nextQuestionLabel" destination="QyJ-vU-jcZ" id="Gqc-SZ-YgZ"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="Lap-Pt-Dc3" id="WqR-49-fHJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
